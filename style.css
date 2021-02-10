@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+body {
+  font-family: 'Londrina Outline', cursive, 'Ultra', serif;
+  background: linear-gradient(90deg, #e4dcad 20%, #8e8b82 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  font-size: 4rem;
+  color: #062121;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(9, 60px);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cell {
+  background-color: #e4dcad;
+  color: #062121;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px dotted #181810;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.fixed {
+  background-color: #062121;
+  color: #e4dcad;
+}
+
+.button {
+  background-color: #e4dcad;
+  border: 2px solid #062121;
+  font-family: 'Ultra', serif;
+  color: #062121;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #062121;
+  color: #e4dcad;
+}
